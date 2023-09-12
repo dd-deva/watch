@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    background-size: 100% 690px;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header ul li {
+    margin-left: 20px;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+
+}
+.header ul li a.active {
+  background-color: orange;  }
+.header ul li a:hover {
+  text-decoration: none; /* Remove underline from link */
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+.header ul li a:hover::after {
+  content: ''; /* Create a pseudo-element for the bottom border */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Border height */
+  background-color: orange;
+}
+/* Align menus to the right */
+.header ul {
+    margin-left: auto;
+}
+
+.watch {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+
+  }
+  
+  .watch .content {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of content */
+    align-items: center;
+  }
+  
+  .watch img {
+    max-width: 100%; /* Ensure the image doesn't exceed container width */
+  }
+  
+  .text {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7); /* Use rgba with alpha value */
+    width: 600px;
+    height: 130px;
+    text-align: center;
+    padding: 10px; /* Add padding for better spacing */
+  }
+  
+  .text h1 {
+    margin-top: 0; /* Adjust margin as needed */
+    color: rgb(14, 13, 13);
+    text-align: center;
+  }
+  
+  .text h2 {
+    color: rgb(14, 13, 13);
+    text-align: center;
+  }
+  
+  .text h1 span,
+  .text h2 span {
+    color: rgb(255, 17, 0);
+  }
+  .img-containers {
+    background-size: 100%;
+    height: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(31, 30, 30);
+    justify-content: space-between;
+    padding: 60px;
+     /* margin-top: 0; */
+   } 
+  .box {
+    display: inline-block;
+    position: relative; 
+    text-align: center;
+    /* padding: 20px; */
+    margin-top: 50px;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(250, 250, 250, 0.8);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .box a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  /* .box img {
+    width: 100px;
+    margin-bottom: 10px;
+  } */
+
+  .txt {
+    color: rgb(160, 73, 11);
+    font-weight: bold;
+    font-family: Calibri;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none; /* Remove text underline */
+  }
+
+  .txt strike {
+    color: rgb(8, 8, 8);
+  }
+
+  .txt span {
+    color: green;
+    font-weight: bold;
+  }
+  .view-more-button {
+    position: absolute;
+    /* bottom: 10px; */
+   margin-top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  .hidden-box {
+    display: none;
+    justify-content: space-between;
+    
+  }
+.container{
+  width: 100%;
+  height: 550px;
+  opacity: 0.7;
+  background-color: rgb(37, 36, 39);
+  background: url('https://img.freepik.com/premium-photo/watch-table-background_811396-7552.jpg?w=900');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.txt-1 {
+  width: 600px;
+  height: 500px;
+  background: none; /* Set background to none for .txt-1 */
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: rgb(226, 241, 248);
+  text-align: center;
+  font-size: 15px;
+  padding-top: 30px; 
+}
+p{
+  font-size: 15px;
+  font-family: "Nunito Sans" , sans-serif ;
+  color: #3d3d3d;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 0 15px 0;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  padding-left: 0;
+}
+
+input:focus{
+  outline: none;
+}
+a:hover,
+a:focus{
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+}
+
+
+.footer{
+  background: #111111;
+  padding-top: 70px;
+}
+.footer-about{
+  margin-bottom: 30px;
+}
+.footer-about .footer-logo{
+  margin-bottom: 30px;
+}
+.footer-about p{
+  color: #b7b7b7;
+  margin-bottom: 30px;
+}
+.footer-widget{
+  margin-bottom: 30px;
+}
+.footer-widget h6{
+  color:  #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.footer-widget ul li{
+  line-height: 36px;
+  list-style: none;
+}
+.footer-widget ul li a{
+  color: #b7b7b7;
+  font-size: 15px;
+}
+.footer-widget ul li a:hover{
+  color: #e53637;
+}
+.footer-widget .footer-newslatter p{
+  color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form{
+  position: relative;
+}
+.footer-widget .footer-newslatter form input{
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  padding: 15px 0;
+  border-bottom: 2px solid #ffffff;
+}
+.footer-widget .footer-newslatter form input::placeholder{
+  color: #b7b7b7;
+}
+.footer-widget .footer-newslatter form button{
+  color: #b7b7b7;
+  font-size: 16px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+.footer-copyright-text{
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.footer-copyright-text p{
+  color: #b7b7b7;
+  margin-bottom: 0;
+}
+.footer-copyright-text p i{
+  color: #e53637;
+}
+.footer-copyright-text p a{
+  color: #e53637;
+}
